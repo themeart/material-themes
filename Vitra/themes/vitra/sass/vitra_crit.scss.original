@@ -1,3 +1,0 @@
-@import '../../../../Material/themes/base/sass/functions';
-@import "variables";
-@import "../../../../Material/themes/material/sass/material_crit";
