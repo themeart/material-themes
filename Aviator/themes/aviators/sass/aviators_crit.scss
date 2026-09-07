@@ -1,0 +1,16 @@
+@import '../../../../Material/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Material/themes/material/sass/material_crit";
+
+
+.aviators {
+    .nav-scrollbar-arrow {
+        color: $navbar-middle-color;
+        &.right {
+            background-image: linear-gradient(to right, transparent 0%, $navbar-bg-middle-color 70%);
+        }
+        &.left {
+            background-image: linear-gradient(to right, $navbar-bg-middle-color 30%, transparent 100%);
+        }
+    }
+}

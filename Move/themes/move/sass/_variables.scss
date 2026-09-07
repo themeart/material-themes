@@ -1,0 +1,154 @@
+// colors
+
+$gray-lighter:                      #f5f7fa;
+$gray-light:                        #9b9b9b;
+$gray:                              #707070;
+$gray-dark:                         #525252;
+$gray-medium:                       #ebebeb;
+$gray-darker:                       #525252;
+$sand:                              #F8F6F4;
+$cool-white:                        #EFF1F3;
+$primary:                           #1597BB;
+$primary-light:                     lighten($primary,50%);
+$secondary:                         #cccccc;
+$success:                           #1C871E;
+$bg-success:                        #cee8d1;
+$info:                              #525252;
+$bg-info:                           #E4E6E9;
+$warning:                           #f39932;
+$bg-warning:                        #F9F2DC;
+$danger:                            #b90000;
+$gold:                              #FFBB5C;
+$green:                             #03B452;
+$bg-danger:                         #E8CCD2;
+$bg-main:                           $gray-lighter;
+$bg-main-ligther:                   $bg-main;
+$bg-config-recommendation:          lighten($primary, 40%);
+
+$white:                             #ffffff;
+$black:                             #000000;
+
+// layout
+
+$body-bg:                           $white;
+$body-color:                        $black;
+
+$layout-boxed-bg-color:             $gray-medium;
+$container-max-widths: (
+    sm:     97vw,
+    md:     720px,
+    lg:     960px,
+    xl:     1470px
+);
+
+// topbar
+
+$topbar-bg-color:                   $cool-white;
+$topbar-color:                      $black;
+
+// Message box
+
+$messagebox-bg-color:               $topbar-bg-color;
+$messagebox-color:                  $primary;
+
+// header
+
+$header-bg-color:                  $white;
+$header-color:                     $body-color;
+$header-bg-color-secondary:        $gray-lighter;
+
+$header-box-shadow:                 none /*0 rem(16px) rem(9px) rem(-12px) transparentize($black, .94)*/;
+
+// Navbar
+
+$navbar-bg-color:                  $white;
+$navbar-bg-middle-color:           #222831;
+$navbar-middle-color:              $white; 
+
+// Search
+
+$search-form-bg:                    $cool-white;
+$search-form-border-color:          darken($cool-white,5%);
+$search-button-bg-color:            $primary;
+
+$search-button-color:               $white;
+$search-button-border-color:        $search-button-bg-color;
+
+// Sidebar
+
+$sidebar-bg-color:                 $cool-white;
+$sidebar-hr-color:                 $gray-medium;
+
+// Productbox
+
+$productbox-min-height:             3rem;
+
+// footer
+
+$footer-bg-color:                   $navbar-bg-middle-color;
+$footer-color:                      lighten($footer-bg-color,50%);
+$footer-color-hover:                $white;
+$footer-headings-color:             $white;
+
+$copyright-bg-color:                darken($footer-bg-color,5%);
+
+
+// font ... be carefully with this settings
+
+$font-family-sans-serif:            'Barlow', sans-serif;
+$font-accent:                       'Barlow Condensed', sans-serif;
+
+$font-size-base:                    rem(15px);
+$font-size-lg:                      rem(18px);
+$font-size-sm:                      rem(14px);
+$font-size-xs:                      rem(14px);
+
+// font heading
+
+$h1-font-size:                      rem(30px);
+$h2-font-size:                      rem(24px);
+$h3-font-size:                      rem(19px);
+$h4-font-size:                      $font-size-base;
+$h5-font-size:                      $font-size-base;
+$h6-font-size:                      $font-size-base;
+
+$headings-font-family:              $font-accent;
+$headings-color:                    $black;
+
+// link color
+
+$link-color:                        $black;
+$link-hover-color:                  $primary;
+
+// rating
+
+$rating-star-color:                 $gold;
+
+// borders
+
+$border-radius:                     .125rem;
+$border-width:                      1px;
+$border-color:                      $gray-medium;
+
+// input
+
+$input-bg:                          $white;
+$input-border-color:                $secondary;
+$input-focus-border-color:          $primary;
+
+$input-btn-padding-y:               rem(8px);
+$input-btn-padding-x:               rem(16px);
+$input-btn-padding-y-sm:            rem(6px);
+
+// toast messages
+
+$toast-background-color:            $primary;
+$toast-color:                       $white;
+
+
+
+// Lädt Beat-Variablen des Material-Templates
+@import '../../../../Material/themes/material/sass/variables';
+
+$nova-theme-path:                   "../../../Material/themes";
+$fa-font-path:                      "../../../Material/themes/base/fontawesome/webfonts";

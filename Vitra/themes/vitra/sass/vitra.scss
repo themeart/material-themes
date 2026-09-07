@@ -1,0 +1,24 @@
+//
+// Platz für eigene Style Angaben in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach my-nova.css kompiliert werden
+// --------------------------------------------------
+
+// Lädt Core-Funktionen
+@import '../../../../Material/themes/base/sass/functions';
+
+// Lädt "my-nova"-Variablen. Hier können Variablen aus Bootstrap und dem Beat-Theme überschrieben werden.
+@import "variables";
+
+// Lädt Style Angaben des Material-Themes
+@import '../../../../Material/themes/material/sass/allstyles';
+
+
+// Vitra Theme
+
+.vitra {
+    .slick-arrow:not(:hover) { 
+        background-color: $primary-light;
+    }
+}

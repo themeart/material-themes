@@ -1,0 +1,83 @@
+//
+// Platz für eigene Style Angaben in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach my-nova.css kompiliert werden
+// --------------------------------------------------
+
+// Lädt Core-Funktionen
+@import '../../../../Material/themes/base/sass/functions';
+
+// Lädt "Aviator"-Variablen. Hier können Variablen aus Bootstrap und dem Beat-Theme überschrieben werden.
+@import "variables";
+
+// Lädt Style Angaben des Material-Themes
+@import '../../../../Material/themes/material/sass/allstyles';
+
+
+// Aviator Theme
+// Hier können alle Style-Angaben notiert werden, die nur Auswirkungen auf dieses Theme haben
+// -----------------------------------------------------
+
+.aviator {
+    header {
+        border-bottom: $navbar-border-bottom;
+        @include media-breakpoint-up(lg) {
+            .cart-icon-dropdown {
+                background-color: lighten($header-bg-color,10%);
+                margin-left: map-get($spacers, 5);
+            }
+            &.full-width-mega {
+                .menu-multiple-rows-multiple .nav-mobile-body {
+                    position: inherit;
+                }
+                .navbar-nav > .nav-item {
+                    > .nav-link {
+                        border-bottom: 1px solid transparent;
+                        font-weight: $font-weight-bold;
+                        &::before {
+                		  height: 20px;
+                		  content: '';
+                		  border-right: 2px dotted $navbar-divider;
+                		  position: absolute;
+                		  top: calc(50% - 10px);
+                		  right: 0;
+                		}
+                    }
+                    &:hover > .nav-link {
+                        border-bottom-color: $black;
+                    }
+                }
+            }
+        }
+    }
+    .product-detail .product-actions {
+        margin-top: .5rem;
+        .compare-button .button-text {
+            display: none;
+        }
+    }
+    .tab-navigation {
+        .nav-tabs {
+            .nav-link {
+                border-bottom: 2px solid transparent;
+                margin-bottom: -1px;
+                &:hover,
+                &.active {
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+    #paypal-button-productDetails-container {
+        margin-top: map-get($spacers, 3);
+    }
+    
+    header.bulma-card-header,
+    article header {
+        background-color: transparent;
+        box-shadow: none;
+        position: inherit;
+        z-index: inherit;
+    }
+}

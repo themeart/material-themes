@@ -1,0 +1,165 @@
+// colors
+
+$gray-lighter:                      #f5f7fa;
+$gray-light:                        #9b9b9b;
+$gray:                              #707070;
+$gray-dark:                         #525252;
+$gray-medium:                       #ebebeb;
+$gray-darker:                       #525252;
+$sand:                              #F8F6F4;
+$cool-white:                        #f8f8f8;
+$primary:                           #D6A270;
+$primary-light:                     #F8F0E5;
+$secondary:                         $primary;
+$success:                           #1C871E;
+$bg-success:                        #cee8d1;
+$info:                              #525252;
+$bg-info:                           $primary-light;
+$warning:                           #f39932;
+$bg-warning:                        #F9F2DC;
+$danger:                            #b90000;
+$gold:                              #FFBB5C;
+$green:                             #03B452;
+$bg-danger:                         #E8CCD2;
+$bg-main:                           $gray-lighter;
+$bg-main-ligther:                   $bg-main;
+$bg-config-recommendation:          lighten($primary, 40%);
+
+$white:                             #ffffff;
+$black:                             #000000;
+
+$yiq-text-dark:                     $black;
+
+// layout
+
+$body-bg:                           $white;
+$body-color:                        $black;
+
+$layout-boxed-bg-color:             #D6A270;
+$container-max-widths: (
+    sm:     97vw,
+    md:     720px,
+    lg:     960px,
+    xl:     1370px
+);
+
+// topbar
+
+$topbar-bg-color:                   $white;
+$topbar-color:                      $black;
+
+// Message box
+
+$messagebox-bg-color:               $primary;
+$messagebox-color:                  $white;
+
+// header
+
+$header-bg-color:                  $primary-light;
+$header-color:                     $body-color;
+$header-bg-color-secondary:        $primary-light;
+
+$header-box-shadow:                 none /*0 rem(16px) rem(9px) rem(-12px) transparentize($black, .94)*/;
+
+// Navbar
+
+$navbar-bg-color:                  #E8CEB3;
+$navbar-bg-middle-color:           $navbar-bg-color;
+$navbar-middle-color:              $black; 
+
+// Search
+
+$search-form-bg:                    $header-bg-color;
+$search-form-border-color:          darken($navbar-bg-color,5%);
+$search-button-bg-color:            $search-form-bg;
+
+// Sidebar
+
+$sidebar-bg-color:                 $cool-white;
+
+// Productbox
+
+$productbox-min-height:             3rem;
+
+// footer
+
+$footer-bg-color:                   #DFB589;
+$footer-bg-image:                   url("templates/Vitra/themes/base/images/forest.png") no-repeat;
+
+$footer-color:                      $black;
+$footer-color-hover:                $black;
+$footer-headings-color:             $black;
+
+$copyright-bg-color:                darken($primary,15%);
+
+
+// font ... be carefully with this settings
+
+$font-family-sans-serif:            'Barlow', sans-serif;
+$font-accent:                       'Barlow Condensed', sans-serif;
+
+$font-size-base:                    rem(15px);
+$font-size-lg:                      rem(18px);
+$font-size-sm:                      rem(14px);
+$font-size-xs:                      rem(12px);
+
+// font heading
+
+$h1-font-size:                      rem(30px);
+$h2-font-size:                      rem(24px);
+$h3-font-size:                      rem(19px);
+$h4-font-size:                      $font-size-base;
+$h5-font-size:                      $font-size-base;
+$h6-font-size:                      $font-size-base;
+
+$headings-font-family:              $font-accent;
+$headings-color:                    $black;
+
+// link color
+
+$link-color:                        $black;
+$link-hover-color:                  $primary;
+
+// rating
+
+$rating-star-color:                 $gold;
+
+// borders
+
+$border-radius:                     .125rem;
+$border-width:                      1px;
+$border-color:                      $gray-medium;
+
+// input
+
+$input-bg:                          $white;
+$input-border-color:                $secondary;
+$input-focus-border-color:          $primary;
+
+$input-btn-padding-y:               rem(10px);
+$input-btn-padding-x:               rem(15px);
+$input-btn-padding-y-sm:            rem(6px);
+
+// Toast
+
+$toast-background-color:            $primary;
+$toast-color:                       $black;
+
+// Counter
+
+$form-counter-bg-color:             $primary-light;
+
+// Cards
+
+$card-cap-bg:                       $primary-light;
+
+// Else
+
+$hr-border-color:                   $secondary;
+
+
+// Lädt Beat-Variablen des Material-Templates
+@import '../../../../Material/themes/material/sass/variables';
+
+$nova-theme-path:                   "../../../Material/themes";
+$fa-font-path:                      "../../../Material/themes/base/fontawesome/webfonts";

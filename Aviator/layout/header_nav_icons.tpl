@@ -1,0 +1,1 @@
+{block name='layout-header-nav-icons-include-header-shop-nav-wish'}{/block}

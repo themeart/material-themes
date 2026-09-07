@@ -1,0 +1,117 @@
+//
+// Platz für eigene Style Angaben in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach my-nova.css kompiliert werden
+// --------------------------------------------------
+
+// Lädt Core-Funktionen
+@import '../../../../Material/themes/base/sass/functions';
+
+// Lädt "Aviator"-Variablen. Hier können Variablen aus Bootstrap und dem Beat-Theme überschrieben werden.
+@import "variables";
+
+// Lädt Style Angaben des Material-Themes
+@import '../../../../Material/themes/material/sass/allstyles';
+
+
+// Aviator Theme
+// Hier können alle Style-Angaben notiert werden, die nur Auswirkungen auf dieses Theme haben
+// -----------------------------------------------------
+
+.aviators {
+    header {
+        /*border-bottom: $navbar-border-bottom;*/
+        @include media-breakpoint-up(lg) {
+            .cart-icon-dropdown {
+                background-color: lighten($header-bg-color,10%);
+                margin-left: map-get($spacers, 5);
+            }
+            &.full-width-mega {
+                .menu-multiple-rows-multiple .nav-mobile-body {
+                    position: inherit;
+                }
+                .navbar-nav > .nav-item {
+                    > .nav-link {
+                        font-weight: $font-weight-bold;
+                        &::before {
+                    	    height: 100%;
+                    		content: '';
+                    		border-right: 1px solid $navbar-divider;
+                    		position: absolute;
+                    		top: 0;
+                    		right: 0;
+                        }
+                    }
+                    &.order-10 {
+                        > .nav-link {
+                            &::before {
+                                border-right: 0;
+                            }
+                        }
+                    }
+                    &.active,
+                    &:hover {
+                        > .nav-link {
+                            background-color: $navbar-link-bg-hover;
+                            color: $navbar-link-color-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-detail .product-actions {
+        margin-top: .5rem;
+        .compare-button .button-text {
+            display: none;
+        }
+    }
+    .tab-navigation {
+        .nav-tabs {
+            .nav-link {
+                border-bottom: 2px solid transparent;
+                margin-bottom: -1px;
+                &:hover,
+                &.active {
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+    #paypal-button-productDetails-container {
+        margin-top: map-get($spacers, 3);
+    }
+    
+    header.bulma-card-header,
+    article header {
+        background-color: transparent;
+        box-shadow: none;
+        position: inherit;
+        z-index: inherit;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .container-inner.justify-content-center.content-box {
+        height: 600px;
+    }
+}
+.background-size-cover {
+    background-size: cover;
+}
+.super-section-inner {
+  background-color: rgba($black,0.2);
+  border-radius: $border-radius;
+  color: $white;
+}
+.icon-primary {
+    i,
+    .opc-Icon {
+        color: $primary;
+    }
+}
+.opc-UniSlider .inner-wrapper {
+    background: linear-gradient(to bottom, rgba($white, 0), rgba($white, 1));
+    padding: map-get($spacers, 3);
+    margin: -2rem;
+}
