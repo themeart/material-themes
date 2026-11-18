@@ -1,7 +1,9 @@
 # Themes für das Material Template
 
-https://material.themeart.de
+Demo: https://material.themeart.de
+Produkt: https://www.themeart.de/store/material-template
 
+### Kostenlose Themes:
 - Aviator mit zwei Themes
 - Move
 - MyMaterial
